@@ -37,5 +37,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt_cloud_demo:
-    +materialized: table
+    staging:
+      +tags: trig
+      demo:
+        +enabled: true
+        +materialized: table
+        +transient: false
+      pivot:
+        +tags: pivot
+        
      

@@ -1,9 +1,13 @@
-{{
+
+ {{
   config(
-    materialized='view'
+    materialized='table',
+    transient='true',
+    sql_header='--From config customer.sql',
+    tags=['trig_outs','hourly']
+
   )
 }}
-
 
 with customers as (
 

@@ -1,14 +1,28 @@
 version: 2
 
 models:
+  - name: int_orders__pivoted
+    config:
+      tags: ['pivot1']
+
   - name: customers
     columns:
       - name: customer_id
         tests:
           - unique
           - not_null
+      - name: first_name
+        tests:
+          - unique
+    config:
+      materialized: view
+      tags: ['cust']
+      sql_header: -- From schema.yml
+      
 
   - name: stg_customers
+    config:
+      tags: ['trig3']
     columns:
       - name: customer_id
         tests:

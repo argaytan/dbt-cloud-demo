@@ -48,4 +48,5 @@ models:
       pivot:
         +tags: pivot
         
-     
+tests:
+  +store_failures: true  # all tests

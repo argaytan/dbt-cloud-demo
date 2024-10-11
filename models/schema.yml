@@ -11,9 +11,11 @@ models:
         tests:
           - unique
           - not_null
-      - name: first_name
+      - name: first_name #|| last_name
         tests:
-          - unique
+          - unique:
+              config:
+                  store_failures: true  # always store failures
     config:
       materialized: view
       tags: ['cust']

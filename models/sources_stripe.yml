@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+    - name: stripe
+      description: This is the stripe schema 
+      database: RAW
+      schema: stripe
+      tables:
+        - name: payment
+          description: This is the payment table

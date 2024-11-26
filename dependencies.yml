@@ -2,3 +2,6 @@ packages:
 
   - git: "https://github.com/dbt-labs/dbt-utils.git"
     revision: 1.3.0
+
+  - git: "https://github.com/argaytan/dbt-cloud-demo.git"
+    revision: common

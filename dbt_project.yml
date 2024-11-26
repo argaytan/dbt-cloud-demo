@@ -47,6 +47,13 @@ models:
         +transient: false
       pivot:
         +tags: pivot
+
+  common:
+    bad_customers:
+      +enabled: false
         
 tests:
   +store_failures: true  # all tests
+
+
+  

@@ -1,0 +1,6 @@
+packages:
+  - git: https://github.com/dbt-labs/dbt-utils.git
+    revision: e164c645238ca98f21b2ecc558912b94b3d75a9f
+  - git: https://github.com/argaytan/dbt-cloud-demo.git
+    revision: 20f32c7965cb4bce7f04a9e50dae6a748d87c104
+sha1_hash: caf846dccaf8bd07d43700d58444062017f2086b
